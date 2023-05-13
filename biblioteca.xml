@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTYPE biblioteca SYSTEM "biblioteca.dtd" >   -->
+<biblioteca>
+    <libros>
+        <libro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+            xsi:noNamespaceSchemaLocation= "biblioteca.xsd" 
+            id="L0001" tipo_clase="novela" paginas="169">
+            <titulo_libro>Un dia en la playa</titulo_libro>
+            <capitulo paginas="32">
+                <titulo_capitulo>Salida de casa</titulo_capitulo>
+                <contenido enlace="http://libro.com/un_dia_en_la_playa/capitulo1"></contenido>
+                </capitulo>
+                <capitulo paginas="43">
+                    <titulo_capitulo>Parada en la gasolinera</titulo_capitulo>
+                    <contenido enlace="http://libro.com/un_dia_en_la_playa/capitulo2"></contenido>
+                </capitulo>
+                 <capitulo paginas="26">
+                    <titulo_capitulo>LLegada a destino</titulo_capitulo>
+                    <contenido enlace="http://libro.com/un_dia_en_la_playa/capitulo3"></contenido>
+                </capitulo>
+                <capitulo paginas="68">
+                    <titulo_capitulo>Comienza la celebración</titulo_capitulo>
+                    <contenido enlace="http://libro.com/un_dia_en_la_playa/capitulo4"></contenido>
+                </capitulo>               
+            <indice>
+                <lista>Capitulo 1</lista>
+                <lista>Capitulo 2</lista>
+                <lista>Capitulo 3</lista>
+                <lista>Capitulo 4</lista>
+            </indice>
+            <sinopsis>
+                La familia Silva viaja a la playa a visitar a la abuela en su cumpleaños.
+            </sinopsis>
+            </libro>
+
+
+            <libro id="L0002" tipo_clase="didactico" paginas="169">
+            <titulo_libro>El bosque para niños</titulo_libro>
+            <capitulo paginas="32">
+                <titulo_capitulo>Arboles</titulo_capitulo>
+                <contenido enlace="http://libro.com/el_bosque/capitulo1"></contenido>
+                </capitulo>
+                <capitulo paginas="43">
+                    <titulo_capitulo>Flores</titulo_capitulo>
+                    <contenido enlace="http://libro.com/el_bosque/capitulo2"></contenido>
+                </capitulo>
+                 <capitulo paginas="26">
+                    <titulo_capitulo>Insectos</titulo_capitulo>
+                    <contenido enlace="http://libro.com/el_bosque/capitulo3"></contenido>
+                </capitulo>
+                <capitulo paginas="68">
+                    <titulo_capitulo>Mamiferos</titulo_capitulo>
+                    <contenido enlace="http://libro.com/el_bosque/capitulo4"></contenido>
+                </capitulo>               
+            <indice>
+                <lista>Capitulo 1</lista>
+                <lista>Capitulo 2</lista>
+                <lista>Capitulo 3</lista>
+                <lista>Capitulo 4</lista>
+            </indice>
+            <sinopsis>
+                Un libro pensado para disfrutar de la naturaleza con niños.
+            </sinopsis>   
+            </libro>
+        </libros>
+        
+        <!--         REVISTAS           -->
+        <revistas>
+            <revista id="R0001" tipo_clase="informatica" numero_paginas="60">
+                <titulo_revista>PC World</titulo_revista>
+                <numero_revista>1</numero_revista>
+                <indice_contenido>
+                    2. Editorial
+                    3. Procesadores
+                    12. Instalar sistema operativo
+                    30. Comparativa
+                    50. Cartas de lectores
+                    54. Sorteo
+                    56. Juegos 
+                </indice_contenido>
+                <seccion numero_paginas="12">
+                    <contenido_revista enlace="http://revista.com/pcworld/articulo1" />
+                </seccion>
+            </revista>
+            
+        </revistas>
+
+        <!--        PERIODICOS          -->
+        <periodicos>
+            <periodico tipo_clase="nacional" fecha_publicacion="12/3/2023">
+                <secciones tipo_seccion="economica">
+                    <articulo autor="Alfonso"></articulo>
+                    <contenido_periodico enlace="http:/revista.com/economia/articulo1" />
+                </secciones>
+                <indice_periodico>
+                    1. Portada
+                    2. Local
+                    5. Nacional
+                    9. Internacional
+                    14. Deportes
+                    19. Pasatiempos
+                </indice_periodico>
+            </periodico>
+
+        </periodicos>
+
+</biblioteca>

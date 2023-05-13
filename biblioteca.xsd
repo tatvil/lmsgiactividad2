@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="libro">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="titulo_libro" type="xs:string"/>
+                <xs:element name="capitulo" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="titulo_capitulo" type="xs:string"></xs:element>
+                            <xs:element name="contenido" type="xs:string"></xs:element>       
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="indice">
+                     <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="lista" type="xs:string" minOccurs="1" maxOccurs="unbounded"></xs:element>  
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="sinopsis" type="xs:string"/>
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:string" use="required"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="revista">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="titulo_revista" type="xs:string"/>
+                <xs:element name="numero_revista" type="xs:integer"/>
+                <xs:element name="indice_contenido" type="xs:string"/>
+                <xs:element name="seccion" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="contenido_revista" type="xs:string"></xs:element>       
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="indice">
+                     <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="lista" type="xs:string" minOccurs="1" maxOccurs="unbounded"></xs:element>  
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:string" use="required"/>
+        </xs:complexType>
+    </xs:element>
+
+     <xs:element name="periodicos">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="periodico"  minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="secciones">
+                                 <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="articulo" type="xs:integer"/>
+                                        <xs:element name="contenido_periodico" type="xs:integer"/>     
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>   
+                            <xs:element name="indice_periodico" type="xs:string"/>    
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:string" use="required"/>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
